@@ -13,7 +13,7 @@ class DataController extends Controller
         return view(
             'main',[
                 'title'=>'crud',
-                'datas'=> Datas::all()
+                'datas'=> Datas::All()
             ]
         );
     }

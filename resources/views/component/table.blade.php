@@ -13,5 +13,8 @@
             <td>{{$data['profesi']}}</td>
         </tr>
         @endforeach
+        <form action="/add" method="get">
+            <button>Add</button>
+        </form>
     </table>
 </div>
