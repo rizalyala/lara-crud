@@ -2,20 +2,14 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 
-
-class Datas 
+class Datas extends Model
 {
-    private static $colec = [
-        [
-            'id'=>'1',
-            'nama'=>'bogeng',
-            'profesi'=>'nganggur'
-        ]
-    ];
+    use HasFactory;
 
-    public static function all()
-    {
-        return self::$colec;
-    }
+    protected $fillable = ['nama','profesi'];
+
+    
 }
