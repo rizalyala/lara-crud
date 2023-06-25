@@ -12,7 +12,6 @@ class Addform extends Controller
         return view(
             'component.add',[
                 'title'=>'crud',
-                
             ]
         );
     }
@@ -23,7 +22,7 @@ class Addform extends Controller
             'nama' => 'required',
             'profesi' => 'required',
         ]);
-        $dataInput = Datas::create($data);
+        Datas::create($data);
         return redirect()->route('home');
         
     }
